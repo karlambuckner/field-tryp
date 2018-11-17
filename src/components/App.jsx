@@ -1,11 +1,15 @@
 import React from "react";
 import Contact from "./Contact";
 import Dropdown from "./Dropdown";
-import Jumbotron from "./Jumbotron"
+import Jumbotron from "./Jumbotron";
+import PropTypes from "prop-types";
 
-function App(){
+function App(props){
+  var stylesComponents = {
+    color: 'blue'
+  }
   return (
-
+    <div style={stylesComponents}>
     <div>
       <div id="topnav">
         <h2 className="right">Field Tryp</h2>
@@ -27,6 +31,7 @@ function App(){
       <Dropdown/>
       <br></br><br></br><br></br><br></br><br></br><br></br>
       <Contact/>
+    </div>
     </div>
   );
 }

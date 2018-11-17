@@ -1,9 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function Jumbotron(){
+function Jumbotron(props){
+  var stylesComponents = {
+    backgroundColor: 'blue',
+    color:'white',
+    fontSize: '45px',
+    fontFamily: 'Lobster',
+    fontStyle: 'cursive',
+    width: '100%',
+    paddingBottom: '20px'
+  }
   return (
-<div>
-<div className="jumbotron jumbotron-billboard">
+<div style={stylesComponents}>
+<div className="billboard">
   <div className="img"></div>
     <div className="container">
         <div className="row">
