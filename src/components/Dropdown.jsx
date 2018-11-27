@@ -1,5 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Dropdown(props){
   var styles = {
@@ -12,8 +13,8 @@ function Dropdown(props){
     Cities
         </button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a className="dropdown-item" href="#">Asheville, NC</a>
-          <a className="dropdown-item" href="#">Portland, OR</a>
+          <a className="dropdown-item" href="#"><Link to="/Asheville">Asheville, NC</Link></a>
+          <a className="dropdown-item" href="#"><Link to="/Portland">Portland, OR</Link></a>
           <a className="dropdown-item" href="#">Denver, CO</a>
         </div>
       </div>
@@ -21,4 +22,4 @@ function Dropdown(props){
   )
 }
 
-export default Dropdown
+export default Dropdown;

@@ -3,6 +3,9 @@ import Contact from './Contact'
 import Dropdown from './Dropdown'
 import Jumbotron from './Jumbotron'
 import PropTypes from 'prop-types'
+import Asheville from './Asheville'
+import Portland from './Portland'
+import { Switch, Route } from 'react-router-dom'
 
 function App(props){
   var stylesComponents = {
@@ -11,13 +14,19 @@ function App(props){
   return (
     <div style={stylesComponents}>
       <div>
+      <Switch>
+      <Route exact path='/' component={Jumbotron} />
+      <Route path='/asheville' component={Asheville} />
+      <Route path='/portland' component={Portland} />
+
+    </Switch>
         <div id="topnav">
           <h2 className="right">Field Tryp</h2>
           <a className="home" href="#home">About</a>
           <a href="#drive">Drive for Us</a>
           <a href="#ride">Ride with Us</a>
         </div>
-        <Jumbotron/>
+
 
 
         <br></br><br></br><br></br>
