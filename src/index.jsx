@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import { AppContainer } from 'react-hot-loader';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App'
+import { AppContainer } from 'react-hot-loader'
 
 const render = (Component) => {
   ReactDOM.render(
@@ -9,8 +9,8 @@ const render = (Component) => {
       <Component/>
     </AppContainer>,
     document.getElementById('react-app-root')
-  );
-};
+  )
+}
 
 /*eslint-disable */
 if (module.hot) {
